@@ -326,10 +326,17 @@ public class SystemBarTintManager {
         if (mNavBarAvailable && !mConfig.isNavigationAtBottom()) {
             params.rightMargin = mConfig.getNavigationBarWidth();
         }
+        
         mStatusBarTintView.setLayoutParams(params);
         mStatusBarTintView.setBackgroundColor(DEFAULT_TINT_COLOR);
         mStatusBarTintView.setVisibility(View.GONE);
         decorViewGroup.addView(mStatusBarTintView);
+    }
+    public view getNavBarTintView(){
+        return mNavBarTintView;
+    }
+    public view getStatusBarTintView(){
+        return mStatusBarTintView;
     }
 
     private void setupNavBarView(Context context, ViewGroup decorViewGroup) {
