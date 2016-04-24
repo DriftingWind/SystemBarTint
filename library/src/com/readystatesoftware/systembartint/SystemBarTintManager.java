@@ -332,10 +332,10 @@ public class SystemBarTintManager {
         mStatusBarTintView.setVisibility(View.GONE);
         decorViewGroup.addView(mStatusBarTintView);
     }
-    public view getNavBarTintView(){
+    public View getNavBarTintView(){
         return mNavBarTintView;
     }
-    public view getStatusBarTintView(){
+    public View getStatusBarTintView(){
         return mStatusBarTintView;
     }
 
